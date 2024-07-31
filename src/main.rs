@@ -7,6 +7,7 @@ const RANGE_LIMIT: usize = 100;
 
 type CoinsType = [usize; NUMBER_OF_COINS - 1];
 
+// NOTE(hspadim): This only solves for (c)
 fn main() {
     let range_combinations: Vec<usize> = (2..=RANGE_LIMIT).collect();
     let base_moedas_utilizadas: [[usize; NUMBER_OF_COINS]; RANGE_LIMIT + 1] =
